@@ -39,7 +39,7 @@ $ImageName = "dont-be-suspicious"
 #############################################################################################################################################
 
 $s=New-Object -ComObject SAPI.SpVoice
-$s.Rate = 1
+$s.Rate = -1
 $s.Speak("Hej $FN")
 
 
@@ -262,11 +262,6 @@ $w = [PInvoke]::GetDeviceCaps($hdc, 118) # width
 $h = [PInvoke]::GetDeviceCaps($hdc, 117) # height
 
 #############################################################################################################################################
-$s.Speak("Już nie uciekniesz")
-$s.Speak("Już nie uciekniesz")
-$s.Speak("Już nie uciekniesz")
-$s.Speak("Hahahahahahahahaha")
-
 <#
 
 .NOTES  
@@ -420,10 +415,10 @@ try {
 	}
 }
 #----------------------------------------------------------------------------------------------------
-
-$s.Speak("Już nie uciekniesz")
-$s.Speak("Już nie uciekniesz")
-$s.Speak("Już nie uciekniesz")
+$s.Rate = 1
+$s.Speak("Juz nie uciekniesz")
+$s.Speak("Juz nie uciekniesz")
+$s.Speak("Juz nie uciekniesz")
 $s.Speak("Hahahahahahahahaha")
 
 
