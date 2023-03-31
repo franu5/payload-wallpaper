@@ -38,6 +38,13 @@ $ImageName = "dont-be-suspicious"
 
 #############################################################################################################################################
 
+$s=New-Object -ComObject SAPI.SpVoice
+$s.Rate = -2
+$s.Speak("Hej $FN")
+$s.Speak("Wiem juz gdzie jestes")
+$s.Speak("Nie uciekaj")
+
+
 <#
 
 .NOTES  
