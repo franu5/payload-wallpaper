@@ -73,12 +73,11 @@ $s.Speak("Hej $FN")
 
 $fn = Get-Name
 
-echo "Czesc! Nie mam dobrych wiadomosci dla ciebie..." $fn >> $Env:temp\foo.txt
+echo "Czesc! Niestety nie mam dobrych wiadomosci dla ciebie..." $fn >> $Env:temp\foo.txt
 
-echo "`nTwoj komputer nie jest do konca bezpieczny" >> $Env:temp\foo.txt
-
+echo "`nTwoj komputer zostal zainfekowany" >> $Env:temp\foo.txt
+echo "`nOd teraz obraz z kamery oraz dźwięk z mikrofonu jest nagrywany" >> $Env:temp\foo.txt
 #############################################################################################################################################
-$s.Speak("Wiem już gdzie jesteś")
 
 <#
 
